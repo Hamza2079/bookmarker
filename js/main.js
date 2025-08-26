@@ -73,7 +73,7 @@ function deletesites(index) {
 	displaysite();
 }
 function validatename() {
-	var regex = /^[a-zA-Z0-9]{2,}$/;
+	var regex = /^[a-zA-Z0-9]{3,}$/;
 	if (regex.test(sitenameinput.value)) {
 		sitenameinput.classList.add("is-valid");
 		sitenameinput.classList.remove("is-invalid");
