@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookmarker - Galaxy Mode</title>
+
+
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<h1><i class="fa-solid fa-bookmark"></i> Bookmarker</h1>
+				<p>Save your favorite websites in galaxy style </p>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="row justify-content-center mb-4">
+				<div class="col-lg-8 col-md-10">
+					<div class="glass-card">
+						<section id="bookmarkForm" class="d-flex flex-column justify-content-center">
+							<div class="mb-4">
+								<label for="siteName" class="form-label">Site Name</label>
+								<input
+								oninput="validatename()"
+									type="text"
+									class="form-control"
+									id="siteName"
+									placeholder="Enter site name"
+									required
+								/>
+							</div>
+
+							<div class="mb-4">
+								<label for="siteUrl" class="form-label">Site URL</label>
+								<input
+								oninput="validateurls()"
+									type="url"
+									class="form-control"
+									id="siteUrl"
+									placeholder="https://example.com"
+									required
+								/>
+							</div>
+
+							<div class="d-flex w-100 justify-content-center">
+								<button type="submit" onclick="addsite()" class="galaxy-btn"> Add Bookmark</button>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+		<div class="bookmark-container container" >
+				<div id="bookmarksList" class="row justify-content-center">
+				
+			</div>
+		</div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</body>
+</html>
