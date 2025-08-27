@@ -5,7 +5,7 @@ body {
 	background-image: url(../images/Black_hole_artist_s_impression_pillars.jpg);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	color: #fff;
 	min-height: 100vh;
 	position: relative;
